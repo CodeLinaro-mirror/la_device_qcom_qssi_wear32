@@ -50,7 +50,7 @@ $(call inherit-product, build/target/product/go_defaults.mk)
 $(call inherit-product-if-exists, frameworks/base/data/sounds/AudioPackageGo.mk)
 
 # RRO configuration
-TARGET_USES_RRO := true
+TARGET_USES_RRO := false
 
 ifneq ($(strip $(TARGET_USES_RRO)),true)
 DEVICE_PACKAGE_OVERLAYS += device/qcom/qssi_wear32/overlay-go/device
@@ -280,6 +280,8 @@ TARGET_USES_MKE2FS := true
 PRODUCT_PROPERTY_OVERRIDES += \
 ro.crypto.volume.filenames_mode = "aes-256-cts" \
 ro.crypto.allow_encrypt_override = true
+
+TARGET_SUPPORTS_WEAR_ANDROID := true
 
 TARGET_USES_QCOM_DISPLAY_BSP := true
 
