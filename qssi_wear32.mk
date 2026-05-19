@@ -265,6 +265,9 @@ PRODUCT_COPY_FILES += \
     device/qcom/qssi_wear32/init.qcom.testscripts.sh:$(TARGET_COPY_OUT_PRODUCT)/etc/init.qcom.testscripts.sh
 endif
 
+PRODUCT_COPY_FILES += \
+    device/qcom/qssi_wear32/qti-packages-disabled.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysconfig/qti-packages-disabled.xml
+
 #Enable full treble flag
 PRODUCT_FULL_TREBLE_OVERRIDE := true
 PRODUCT_VENDOR_MOVE_ENABLED := true

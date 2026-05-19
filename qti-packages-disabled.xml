@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Copyright (c) Qualcomm Technologies, Inc. and/or its subsidiaries.
+    SPDX-License-Identifier: BSD-3-Clause-Clear
+  -->
+<config>
+    <disabled-in-sku package="com.android.externalstorage" />
+    <disabled-in-sku package="com.android.providers.calendar" />
+    <disabled-in-sku package="com.android.statementservice" />
+    <disabled-in-sku package="com.android.contacts" />
+    <disabled-in-sku package="com.android.keychain" />
+    <disabled-in-sku package="com.android.printspooler" />
+    <disabled-in-sku package="com.android.dynsystem" />
+    <disabled-in-sku package="com.android.traceur" />
+    <disabled-in-sku package="com.google.android.euicc" />
+    <disabled-in-sku package="com.android.devicediagnostics" />
+    <disabled-in-sku package="com.android.camera2" />
+    <disabled-in-sku package="com.android.localtransport" />
+
+
+    <disabled-in-sku package="com.android.rkpdapp" />
+    <disabled-in-sku package="com.android.documentsui" />
+    <disabled-in-sku package="com.qualcomm.location" />
+    <disabled-in-sku package="com.qti.episteme" />
+    <disabled-in-sku package="com.android.nfc" />
+    <disabled-in-sku package="com.android.calendar" />
+    <disabled-in-sku package="com.qti.services.testlauncher" />
+    <disabled-in-sku package="com.android.DeviceAsWebcam" />
+
+    <disabled-in-sku package="com.android.cellbroadcastreceiver.module" />
+    <disabled-in-sku package="com.android.cellbroadcastreceiver" />
+
+    <disabled-in-sku package="com.android.healthconnect.controller" />
+    <disabled-in-sku package="com.android.photopicker" />
+    <disabled-in-sku package="com.android.federatedcompute.services" />
+    <disabled-in-sku package="com.android.ondevicepersonalization.services" />
+    <disabled-in-sku package="com.android.adservices.api" />
+
+</config>
+
