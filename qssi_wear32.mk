@@ -157,7 +157,7 @@ TARGET_USES_NQ_NFC := true
 
 
 # default is nosdcard, S/W button enabled in resource
-PRODUCT_CHARACTERISTICS := nosdcard
+PRODUCT_CHARACTERISTICS := nosdcard,watch
 BOARD_FRP_PARTITION_NAME := frp
 
 PRODUCT_PACKAGES += qspa_system.rc qspa_default.rc
