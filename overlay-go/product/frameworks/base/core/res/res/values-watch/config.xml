@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/*
+** Copyright 2014, The Android Open Source Project
+**
+** Licensed under the Apache License, Version 2.0 (the "License");
+** you may not use this file except in compliance with the License.
+** You may obtain a copy of the License at
+**
+**     http://www.apache.org/licenses/LICENSE-2.0
+**
+** Unless required by applicable law or agreed to in writing, software
+** distributed under the License is distributed on an "AS IS" BASIS,
+** WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+** See the License for the specific language governing permissions and
+** limitations under the License.
+*/
+    Changes from Qualcomm Technologies, Inc. are provided under the following license:
+    Copyright (c) Qualcomm Technologies, Inc. and/or its subsidiaries.
+    SPDX-License-Identifier: BSD-3-Clause-Clear
+-->
+
+<resources>
+    <!-- Keyguard component -->
+    <string name="config_keyguardComponent" translatable="false">com.qualcomm.qti.apps.watchsystemui/com.qualcomm.qti.apps.watchsystemui.keyguard.WatchKeyguardService</string>
+    <!-- SystemUi service component -->
+    <string name="config_systemUIServiceComponent" translatable="false">com.qualcomm.qti.apps.watchsystemui/com.qualcomm.qti.apps.watchsystemui.WatchSystemUIService</string>
+    <!-- screen shot service component -->
+    <string name="config_screenshotServiceComponent" translatable="false">com.qualcomm.qti.apps.watchsystemui/com.qualcomm.qti.apps.watchsystemui.screenshot.ScreenshotService</string>
+    <!-- SystemUi usb debugging component -->
+    <string name="config_customAdbPublicKeyConfirmationComponent">com.qualcomm.qti.apps.watchsystemui/com.qualcomm.qti.apps.watchsystemui.usb.UsbDebuggingActivity</string>
+    <!-- SystemUi MediaProjectionPermission component -->
+    <string name="config_mediaProjectionPermissionDialogComponent" translatable="false">com.qualcomm.qti.apps.watchsystemui/com.qualcomm.qti.apps.watchsystemui.mediaprojection.MediaProjectionPermissionActivity</string>
+    <!-- data limit component -->
+    <string name="config_networkOverLimitComponent" translatable="false">com.qualcomm.qti.apps.watchsystemui/com.qualcomm.qti.apps.watchsystemui.network.WatchNetworkOverLimitActivity</string>
+    <!-- Component name of the default wallpaper. This will be ImageWallpaper if not specified -->
+    <string name="default_wallpaper_component" translatable="false">com.qualcomm.qti.weartech.watchface/com.qualcomm.qti.weartech.watchface.ui.screens.watchface.wallpaper.WatchWallpaperService</string>
+    <!-- Component name of the built in wallpaper used to display bitmap wallpapers. This must not be null. -->
+    <string name="image_wallpaper_component" translatable="false">com.qualcomm.qti.apps.watchsystemui/com.qualcomm.qti.apps.watchsystemui.wallpaper.WatchImageWallpaper</string>
+</resources>

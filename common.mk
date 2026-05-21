@@ -47,8 +47,8 @@ PRODUCT_COPY_FILES += \
     device/qcom/qssi/qti_whitelist_system_ext.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/sysconfig/qti_whitelist_system_ext.xml
 
 PRODUCT_COPY_FILES += \
-    device/qcom/qssi/privapp-permissions-qti.xml:system/etc/permissions/privapp-permissions-qti.xml \
-    device/qcom/qssi/privapp-permissions-qti-system-ext.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/privapp-permissions-qti-system-ext.xml
+    device/qcom/qssi_wear32/privapp-permissions-qti.xml:system/etc/permissions/privapp-permissions-qti.xml \
+    device/qcom/qssi_wear32/privapp-permissions-qti-system-ext.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/privapp-permissions-qti-system-ext.xml
 
 
 # Ipsec_tunnels feature

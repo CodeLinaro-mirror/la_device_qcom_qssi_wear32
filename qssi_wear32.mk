@@ -50,7 +50,7 @@ $(call inherit-product, build/target/product/go_defaults.mk)
 $(call inherit-product-if-exists, frameworks/base/data/sounds/AudioPackageGo.mk)
 
 # RRO configuration
-TARGET_USES_RRO := true
+TARGET_USES_RRO := false
 
 ifneq ($(strip $(TARGET_USES_RRO)),true)
 DEVICE_PACKAGE_OVERLAYS += device/qcom/qssi_wear32/overlay-go/device
