@@ -64,6 +64,10 @@ TARGET_NO_GMS_PACKAGES := true
 #########################End of Go configs########################################
 
 TARGET_SUPPORTS_WEARABLES := true
+TARGET_SUPPORTS_WEAR_OS := false
+TARGET_SUPPORTS_WEAR_ANDROID := true
+
+$(call soong_config_set_bool, WEAR_OS, TARGET_SUPPORTS_WEAR_OS, $(if $(filter true, $(TARGET_SUPPORTS_WEAR_OS)), true, false))
 
 #### Dynamic Partition Handling
 
