@@ -114,6 +114,11 @@
     <!-- Enable or disable android.companion.virtual.VirtualDeviceManager. Enabled by default. -->
     <bool name="config_enableVirtualDeviceManager">false</bool>
 
+    <!-- Component name of the default wallpaper. This will be ImageWallpaper if not specified -->
+    <string name="default_wallpaper_component" translatable="false">com.qualcomm.qti.weartech.watchface/com.qualcomm.qti.weartech.watchface.ui.screens.watchface.wallpaper.WatchWallpaperService</string>
+    <!-- Component name of the built in wallpaper used to display bitmap wallpapers. This must not be null. -->
+    <string name="image_wallpaper_component" translatable="false">com.qualcomm.qti.apps.watchsystemui/com.qualcomm.qti.apps.watchsystemui.wallpaper.WatchImageWallpaper</string>
+
     <!-- Control the default UI mode type to use when there is no other type override
         happening.  One of the following values (See Configuration.java)
         1  UI_MODE_TYPE_NORMAL

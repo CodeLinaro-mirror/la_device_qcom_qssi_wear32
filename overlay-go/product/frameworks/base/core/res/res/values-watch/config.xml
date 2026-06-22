@@ -33,10 +33,6 @@
     <string name="config_mediaProjectionPermissionDialogComponent" translatable="false">com.qualcomm.qti.apps.watchsystemui/com.qualcomm.qti.apps.watchsystemui.mediaprojection.MediaProjectionPermissionActivity</string>
     <!-- data limit component -->
     <string name="config_networkOverLimitComponent" translatable="false">com.qualcomm.qti.apps.watchsystemui/com.qualcomm.qti.apps.watchsystemui.network.WatchNetworkOverLimitActivity</string>
-    <!-- Component name of the default wallpaper. This will be ImageWallpaper if not specified -->
-    <string name="default_wallpaper_component" translatable="false">com.qualcomm.qti.weartech.watchface/com.qualcomm.qti.weartech.watchface.ui.screens.watchface.wallpaper.WatchWallpaperService</string>
-    <!-- Component name of the built in wallpaper used to display bitmap wallpapers. This must not be null. -->
-    <string name="image_wallpaper_component" translatable="false">com.qualcomm.qti.apps.watchsystemui/com.qualcomm.qti.apps.watchsystemui.wallpaper.WatchImageWallpaper</string>
 
     <!-- Controls the double tap power button gesture to trigger a target action.
         0: Gesture is disabled
