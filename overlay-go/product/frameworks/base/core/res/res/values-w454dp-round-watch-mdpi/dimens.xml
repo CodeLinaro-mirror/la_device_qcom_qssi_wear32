@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/* //device/apps/common/assets/res/any/dimens.xml
+**
+** Copyright 2006, The Android Open Source Project
+**
+** Licensed under the Apache License, Version 2.0 (the "License");
+** you may not use this file except in compliance with the License.
+** You may obtain a copy of the License at
+**
+**     http://www.apache.org/licenses/LICENSE-2.0
+**
+** Unless required by applicable law or agreed to in writing, software
+** distributed under the License is distributed on an "AS IS" BASIS,
+** WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+** See the License for the specific language governing permissions and
+** limitations under the License.
+**
+** Changes from Qualcomm Technologies, Inc. are provided under the following license:
+** Copyright (c) Qualcomm Technologies, Inc. and/or its subsidiaries.
+** SPDX-License-Identifier: BSD-3-Clause-Clear
+*/
+-->
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+    <dimen name="size_4dp">6dp</dimen>
+    <dimen name="size_8dp">11dp</dimen>
+    <dimen name="size_12dp">16dp</dimen>
+    <dimen name="size_16dp">21dp</dimen>
+    <dimen name="size_24dp">32dp</dimen>
+    <dimen name="size_36dp">48dp</dimen>
+    <dimen name="size_48dp">64dp</dimen>
+    <dimen name="size_64dp">84dp</dimen>
+</resources>
