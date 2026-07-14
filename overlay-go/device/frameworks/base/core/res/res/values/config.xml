@@ -28,12 +28,6 @@
      IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  -->
 
-<!--
-Changes from Qualcomm Technologies, Inc. are provided under the following license:
-Copyright (c) Qualcomm Technologies, Inc. and/or its subsidiaries.
-SPDX-License-Identifier: BSD-3-Clause-Clear
--->
-
 <resources>
     <!-- Flag specifying whether VoLTE, VT and WFC is available on device -->
     <bool name="config_device_volte_available">true</bool>
@@ -42,32 +36,4 @@ SPDX-License-Identifier: BSD-3-Clause-Clear
     <!-- When true use the linux /dev/input/event subsystem to detect the switch changes
     on the headphone/microphone jack. When false use the older uevent framework -->
     <bool name="config_useDevInputEventForAudioJack">true</bool>
-
-    <!-- Component name of the default wallpaper. This will be ImageWallpaper if not specified -->
-    <string name="default_wallpaper_component" translatable="false">com.qualcomm.qti.weartech.watchface/com.qualcomm.qti.weartech.watchface.ui.screens.watchface.wallpaper.WatchWallpaperService</string>
-
-    <!-- Component name of the built in wallpaper used to display bitmap wallpapers. This must not be null. -->
-    <string name="image_wallpaper_component" translatable="false">com.qualcomm.qti.apps.watchsystemui/com.qualcomm.qti.apps.watchsystemui.wallpaper.WatchImageWallpaper</string>
-
-    <!-- Keyguard component -->
-    <string name="config_keyguardComponent" translatable="false">com.qualcomm.qti.apps.watchsystemui/com.qualcomm.qti.apps.watchsystemui.keyguard.WatchKeyguardService</string>
-    <!-- SystemUi service component -->
-    <string name="config_systemUIServiceComponent" translatable="false">com.qualcomm.qti.apps.watchsystemui/com.qualcomm.qti.apps.watchsystemui.WatchSystemUIService</string>
-    <!-- screen shot service component -->
-    <string name="config_screenshotServiceComponent" translatable="false">com.qualcomm.qti.apps.watchsystemui/com.qualcomm.qti.apps.watchsystemui.screenshot.ScreenshotService</string>
-    <!-- SystemUi usb debugging component -->
-    <string name="config_customAdbPublicKeyConfirmationComponent">com.qualcomm.qti.apps.watchsystemui/com.qualcomm.qti.apps.watchsystemui.usb.UsbDebuggingActivity</string>
-    <!-- MediaProjiectin component -->
-    <string name="config_mediaProjectionPermissionDialogComponent" translatable="false">com.qualcomm.qti.apps.watchsystemui/com.qualcomm.qti.apps.watchsystemui.mediaprojection.MediaProjectionPermissionActivity</string>
-    <!-- data limit component -->
-    <string name="config_networkOverLimitComponent" translatable="false">com.qualcomm.qti.apps.watchsystemui/com.qualcomm.qti.apps.watchsystemui.network.WatchNetworkOverLimitActivity</string>
-
-    <!-- default enable dark theme -->
-    <integer name="config_defaultNightMode">2</integer>
-
-	<!-- long press power to show global action dialog -->
-	<integer name="config_longPressOnPowerBehavior">1</integer>
-
-	<!-- Go to home -->
-	<integer name="config_shortPressOnPowerBehavior">4</integer>
 </resources>

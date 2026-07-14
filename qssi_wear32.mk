@@ -64,6 +64,10 @@ TARGET_NO_GMS_PACKAGES := true
 #########################End of Go configs########################################
 
 TARGET_SUPPORTS_WEARABLES := true
+TARGET_SUPPORTS_WEAR_OS := false
+TARGET_SUPPORTS_WEAR_ANDROID := true
+
+$(call soong_config_set_bool, WEAR_OS, TARGET_SUPPORTS_WEAR_OS, $(if $(filter true, $(TARGET_SUPPORTS_WEAR_OS)), true, false))
 
 #### Dynamic Partition Handling
 
@@ -157,7 +161,7 @@ TARGET_USES_NQ_NFC := true
 
 
 # default is nosdcard, S/W button enabled in resource
-PRODUCT_CHARACTERISTICS := nosdcard
+PRODUCT_CHARACTERISTICS := nosdcard,watch
 BOARD_FRP_PARTITION_NAME := frp
 
 PRODUCT_PACKAGES += qspa_system.rc qspa_default.rc
@@ -265,6 +269,9 @@ PRODUCT_COPY_FILES += \
     device/qcom/qssi_wear32/init.qcom.testscripts.sh:$(TARGET_COPY_OUT_PRODUCT)/etc/init.qcom.testscripts.sh
 endif
 
+PRODUCT_COPY_FILES += \
+    device/qcom/qssi_wear32/qti-packages-disabled.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysconfig/qti-packages-disabled.xml
+
 #Enable full treble flag
 PRODUCT_FULL_TREBLE_OVERRIDE := true
 PRODUCT_VENDOR_MOVE_ENABLED := true
@@ -280,8 +287,6 @@ TARGET_USES_MKE2FS := true
 PRODUCT_PROPERTY_OVERRIDES += \
 ro.crypto.volume.filenames_mode = "aes-256-cts" \
 ro.crypto.allow_encrypt_override = true
-
-TARGET_SUPPORTS_WEAR_ANDROID := true
 
 TARGET_USES_QCOM_DISPLAY_BSP := true
 
