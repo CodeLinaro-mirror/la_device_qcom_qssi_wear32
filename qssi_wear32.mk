@@ -272,6 +272,9 @@ endif
 PRODUCT_COPY_FILES += \
     device/qcom/qssi_wear32/qti-packages-disabled.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysconfig/qti-packages-disabled.xml
 
+PRODUCT_COPY_FILES += \
+    device/qcom/qssi_wear32/bootanimation/bootanimation.zip:$(TARGET_COPY_OUT_SYSTEM)/media/bootanimation.zip
+
 #Enable full treble flag
 PRODUCT_FULL_TREBLE_OVERRIDE := true
 PRODUCT_VENDOR_MOVE_ENABLED := true
