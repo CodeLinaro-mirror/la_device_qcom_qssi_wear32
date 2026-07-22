@@ -35,6 +35,8 @@
     <disabled-in-sku package="com.android.federatedcompute.services" />
     <disabled-in-sku package="com.android.ondevicepersonalization.services" />
     <disabled-in-sku package="com.android.adservices.api" />
-
+    <disabled-in-sku package="com.android.imsserviceentitlement" />
+    <disabled-in-sku package="com.android.devicelockcontroller" />
+    <disabled-in-sku package="com.android.managedprovisioning" />
 </config>
 
