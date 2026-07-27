@@ -193,4 +193,7 @@ SPDX-License-Identifier: BSD-3-Clause-Clear
 
     <!-- minimum screen off timeout value of Wearable device -->
     <integer name="config_minimumScreenOffTimeout">5000</integer>
+
+    <!-- Whether the device supports quick settings and its associated APIs -->
+    <bool name="config_quickSettingsSupported">false</bool>
 </resources>
