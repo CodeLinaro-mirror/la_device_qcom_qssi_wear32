@@ -190,4 +190,7 @@ SPDX-License-Identifier: BSD-3-Clause-Clear
     <!-- Flag specifying whether VoLTE and WFC is available on device -->
     <bool name="config_device_volte_available">true</bool>
     <bool name="config_device_wfc_ims_available">true</bool>
+
+    <!-- minimum screen off timeout value of Wearable device -->
+    <integer name="config_minimumScreenOffTimeout">5000</integer>
 </resources>
