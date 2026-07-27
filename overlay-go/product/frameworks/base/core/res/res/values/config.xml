@@ -203,4 +203,7 @@ SPDX-License-Identifier: BSD-3-Clause-Clear
         Otherwise, the device may fail to wake out of suspend reliably.
         The default is false. -->
     <bool name="config_suspendWhenScreenOffDueToProximity">true</bool>
+
+    <!-- True if the device supports insecure lock screen. -->
+    <bool name="config_supportsInsecureLockScreen">false</bool>
 </resources>
