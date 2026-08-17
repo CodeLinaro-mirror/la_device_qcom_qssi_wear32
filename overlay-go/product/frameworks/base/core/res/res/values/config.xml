@@ -210,4 +210,10 @@ SPDX-License-Identifier: BSD-3-Clause-Clear
     <!-- Make the default config as UNKNOWN so that Modem configurtion would be retained -->
     <integer name="config_default_cellular_usage_setting">-1</integer>
 
+    <!-- User restrictions set on the SYSTEM user when it is first created.
+         Note: Also update appropriate overlay files. -->
+    <string-array translatable="false" name="config_defaultFirstUserRestrictions">
+        <item>no_config_vpn</item>
+    </string-array>
+
 </resources>
