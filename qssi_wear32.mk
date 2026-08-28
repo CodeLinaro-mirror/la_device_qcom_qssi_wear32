@@ -301,7 +301,7 @@ endif
 
 # Enable virtual A/B compression
 $(call inherit-product, $(SRC_TARGET_DIR)/product/virtual_ab_ota/android_t_baseline.mk)
-PRODUCT_VIRTUAL_AB_COMPRESSION_METHOD := gz
+PRODUCT_VIRTUAL_AB_COMPRESSION_METHOD := lz4
 
 ifeq ($(SYSTEMEXT_SEPARATE_PARTITION_ENABLE), false)
 PRODUCT_PACKAGES += \
