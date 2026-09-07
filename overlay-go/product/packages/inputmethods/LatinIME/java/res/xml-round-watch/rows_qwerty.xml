@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/*
+**
+** Copyright 2010, The Android Open Source Project
+**
+** Licensed under the Apache License, Version 2.0 (the "License");
+** you may not use this file except in compliance with the License.
+** You may obtain a copy of the License at
+**
+**     http://www.apache.org/licenses/LICENSE-2.0
+**
+** Unless required by applicable law or agreed to in writing, software
+** distributed under the License is distributed on an "AS IS" BASIS,
+** WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+** See the License for the specific language governing permissions and
+** limitations under the License.
+**
+** Changes from Qualcomm Technologies, Inc. are provided under the following license:
+** Copyright (c) Qualcomm Technologies, Inc. and/or its subsidiaries.
+** SPDX-License-Identifier: BSD-3-Clause-Clear
+*/
+-->
+
+<merge
+    xmlns:latin="http://schemas.android.com/apk/res/com.android.inputmethod.latin"
+>
+    <include
+        latin:keyboardLayout="@xml/key_styles_common" />
+    <Row
+        latin:keyWidth="10%p"
+    >
+        <include
+            latin:keyboardLayout="@xml/rowkeys_qwerty1" />
+    </Row>
+    <Row
+        latin:keyWidth="9%p"
+    >
+        <include
+            latin:keyXPos="5%p"
+            latin:keyboardLayout="@xml/rowkeys_qwerty2" />
+        <!-- adding shift key in alphabet mode to 2nd row
+             making 10 keys in it also now. This makes ABC/symbols
+             switcher and backspace key position uniform in all
+             screens -->
+        <Key
+            latin:keyStyle="shiftKeyStyle" />
+    </Row>
+    <!-- remove shift and delete from 3rd row and add in 4th row
+         in 4th row only keep space apart frmo shift, delete.
+         , and period keys to be removed later -->
+    <Row
+        latin:keyWidth="9%p"
+    >
+        <include
+            latin:keyboardLayout="@xml/rowkeys_qwerty3"
+            latin:keyXPos="11%p" />
+        <Key
+            latin:keyStyle="deleteKeyStyle"
+            latin:keyWidth="13%p"
+            latin:visualInsetsLeft="1%p" />
+    </Row>
+    <Row>
+         <Key
+            latin:keyStyle="toSymbolKeyStyle"
+            latin:keyXPos="20%p"
+            latin:keyWidth="11%p"
+            latin:visualInsetsRight="1%p" />
+        <include
+            latin:keyWidth="11%p"
+            latin:keyboardLayout="@xml/key_comma"/>
+        <include
+            latin:keyboardLayout="@xml/key_space_symbols"/>
+        <Key
+            latin:keyStyle="enterKeyStyle"
+            latin:keyWidth="11%p"
+            latin:visualInsetsLeft="1%p" />
+    </Row>
+</merge>
