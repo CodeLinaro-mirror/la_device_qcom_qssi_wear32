@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2014 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+
+     Changes from Qualcomm Technologies, Inc. are provided under the following license:
+     Copyright (c) Qualcomm Technologies, Inc. and/or its subsidiaries.
+     SPDX-License-Identifier: BSD-3-Clause-Clear
+-->
+
+<!--
+===============================================================
+                        PLEASE READ
+===============================================================
+
+The Material themes must not be modified in order to pass CTS.
+Many related themes and styles depend on other values defined in this file.
+If you would like to provide custom themes and styles for your device,
+please see styles_device_defaults.xml.
+
+===============================================================
+                        PLEASE READ
+===============================================================
+ -->
+<!-- *************** Circular Display Changes *******************
+     Base values taken from frameworks/base/core/res/res/values/
+     styles_material.xml
+-->
+<resources>
+    <!-- Alert dialog button bar button. change gravity to center -->
+    <style name="Widget.Material.Button.ButtonBar.AlertDialog"
+           parent="Widget.Material.Button.Borderless.Small">
+        <item name="paddingStart">@dimen/list_item_padding_start_material</item>
+        <item name="paddingEnd">@dimen/list_item_padding_end_material</item>
+        <item name="drawablePadding">8dp</item>
+        <item name="gravity">center</item>
+        <item name="minWidth">64dp</item>
+        <item name="minHeight">@dimen/alert_dialog_button_bar_height</item>
+    </style>
+
+    <!-- changed paddingTop from screenPrecentage_15 to 8dp -->
+    <style name="PreferenceFragmentList.Material">
+        <item name="paddingStart">@dimen/preference_fragment_padding_side_material</item>
+        <item name="paddingEnd">@dimen/preference_fragment_padding_side_material</item>
+        <item name="paddingTop">8dp</item>
+        <item name="paddingBottom">@dimen/preference_fragment_padding_vertical_material</item>
+    </style>
+
+    <!-- changed vertical and horizontal offset for overflow popupmenu and
+         overlapAnchor to false to make it come below actionbar -->
+    <style name="Widget.Material.PopupMenu.Overflow">
+        <item name="overlapAnchor">false</item>
+        <item name="dropDownVerticalOffset">4dip</item>
+        <item name="dropDownHorizontalOffset">16dip</item>
+    </style>
+
+    <!-- changed overlapAnchor from true to false -->
+    <style name="Widget.Material.ContextPopupMenu" parent="Widget.Material.ListPopupWindow">
+        <item name="dropDownVerticalOffset">4dip</item>
+        <item name="dropDownHorizontalOffset">16dip</item>
+        <item name="overlapAnchor">false</item>
+    </style>
+
+    <!-- reduced paddingStart/End from 12dip to 6dip -->
+    <style name="Widget.Material.ActionButton">
+        <item name="background">?attr/actionBarItemBackground</item>
+        <item name="paddingStart">6dp</item>
+        <item name="paddingEnd">6dp</item>
+        <item name="minWidth">@dimen/action_button_min_width_material</item>
+        <item name="minHeight">@dimen/action_button_min_height_material</item>
+        <item name="gravity">center</item>
+        <item name="scaleType">center</item>
+        <item name="maxLines">2</item>
+    </style>
+
+    <!-- reduce minWidth from 56 to 44 -->
+    <style name="Widget.Material.ActionButton.CloseMode">
+        <item name="background">@drawable/control_background_40dp_material</item>
+        <!-- Should match Widget.Material.Toolbar.Button.Navigation minWidth. -->
+        <item name="minWidth">44dp</item>
+    </style>
+
+    <!-- reduced paddingStart/End from 16dip to 6dip -->
+    <style name="Widget.Material.ActionBar.TabView" parent="Widget.Material">
+        <item name="gravity">center_horizontal</item>
+        <item name="background">@drawable/tab_indicator_material</item>
+        <item name="paddingStart">6dip</item>
+        <item name="paddingEnd">6dip</item>
+    </style>
+
+    <!-- adding paddingStart/End to use same dimen as used in actionBar -->
+    <style name="Widget.Material.ActionMode">
+        <item name="background">?attr/actionModeBackground</item>
+        <item name="backgroundSplit">?attr/actionModeSplitBackground</item>
+        <item name="height">?attr/actionBarSize</item>
+        <item name="titleTextStyle">@style/TextAppearance.Material.Widget.ActionMode.Title</item>
+        <item name="subtitleTextStyle">@style/TextAppearance.Material.Widget.ActionMode.Subtitle</item>
+        <item name="closeItemLayout">@layout/action_mode_close_item_material</item>
+        <item name="paddingStart">@dimen/action_bar_default_padding_start_material</item>
+        <item name="paddingEnd">@dimen/action_bar_default_padding_end_material</item>
+    </style>
+
+</resources>
