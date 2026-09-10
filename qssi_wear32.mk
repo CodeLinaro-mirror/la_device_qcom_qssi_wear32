@@ -278,6 +278,12 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     device/qcom/qssi_wear32/public.libraries.system_ext-qti.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/public.libraries-qti.txt
 
+PRODUCT_COPY_FILES += \
+    frameworks/base/data/sounds/effects/ogg/camera_click_48k.ogg:$(TARGET_COPY_OUT_PRODUCT)/media/audio/ui/camera_click.ogg \
+    frameworks/base/data/sounds/effects/ogg/camera_focus.ogg:$(TARGET_COPY_OUT_PRODUCT)/media/audio/ui/camera_focus.ogg \
+    frameworks/base/data/sounds/effects/ogg/VideoStop_48k.ogg:$(TARGET_COPY_OUT_PRODUCT)/media/audio/ui/VideoStop.ogg \
+    frameworks/base/data/sounds/effects/ogg/VideoRecord_48k.ogg:$(TARGET_COPY_OUT_PRODUCT)/media/audio/ui/VideoRecord.ogg \
+
 #Enable full treble flag
 PRODUCT_FULL_TREBLE_OVERRIDE := true
 PRODUCT_VENDOR_MOVE_ENABLED := true
