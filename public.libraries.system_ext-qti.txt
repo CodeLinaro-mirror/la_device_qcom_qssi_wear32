@@ -1,0 +1,2 @@
+libdiag_system.qti.so
+liblistenjni.qti.so
