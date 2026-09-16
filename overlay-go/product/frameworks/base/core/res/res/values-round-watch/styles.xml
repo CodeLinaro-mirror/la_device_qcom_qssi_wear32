@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2006 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+
+     Changes from Qualcomm Technologies, Inc. are provided under the following license:
+     Copyright (c) Qualcomm Technologies, Inc. and/or its subsidiaries.
+     SPDX-License-Identifier: BSD-3-Clause-Clear
+-->
+
+<!-- *************** Circular Display Changes *******************
+     Base values taken from frameworks/base/core/res/res/values/
+     styles.xml
+-->
+<resources>
+
+   <!-- increased paddingStart, paddingEnd for round display -->
+   <style name="Widget.ActionBar">
+        <item name="background">@drawable/action_bar_background</item>
+        <item name="displayOptions">useLogo|showHome|showTitle</item>
+        <item name="divider">@drawable/action_bar_divider</item>
+        <item name="height">?attr/actionBarSize</item>
+        <item name="paddingStart">@dimen/action_bar_default_padding_start_material</item>
+        <item name="paddingEnd">@dimen/action_bar_default_padding_end_material</item>
+        <item name="paddingTop">0dip</item>
+        <item name="paddingBottom">0dip</item>
+        <item name="titleTextStyle">@style/TextAppearance.Widget.ActionBar.Title</item>
+        <item name="subtitleTextStyle">@style/TextAppearance.Widget.ActionBar.Subtitle</item>
+        <item name="progressBarStyle">@style/Widget.ProgressBar.Horizontal</item>
+        <item name="indeterminateProgressStyle">@style/Widget.ProgressBar.Small</item>
+        <item name="homeLayout">@layout/action_bar_home</item>
+    </style>
+
+    <!-- increased paddingStart, paddingEnd for round display -->
+    <style name="Widget.ActionMode">
+        <item name="background">?attr/actionModeBackground</item>
+        <item name="backgroundSplit">?attr/actionModeSplitBackground</item>
+        <item name="height">?attr/actionBarSize</item>
+        <item name="titleTextStyle">@style/TextAppearance.Widget.ActionMode.Title</item>
+        <item name="subtitleTextStyle">@style/TextAppearance.Widget.ActionMode.Subtitle</item>
+        <item name="paddingStart">@dimen/action_bar_default_padding_start_material</item>
+        <item name="paddingEnd">@dimen/action_bar_default_padding_end_material</item>
+    </style>
+
+   <!-- increased paddingStart, paddingEnd for round display -->
+   <style name="Widget.Toolbar">
+        <item name="titleTextAppearance">@style/TextAppearance.Widget.Toolbar.Title</item>
+        <item name="subtitleTextAppearance">@style/TextAppearance.Widget.Toolbar.Subtitle</item>
+        <item name="minHeight">?attr/actionBarSize</item>
+        <item name="titleMargin">4dp</item>
+        <item name="maxButtonHeight">@dimen/action_bar_default_height_material</item>
+        <item name="buttonGravity">top</item>
+        <item name="navigationButtonStyle">@style/Widget.Toolbar.Button.Navigation</item>
+        <item name="collapseIcon">?attr/homeAsUpIndicator</item>
+        <item name="collapseContentDescription">@string/toolbar_collapse_description</item>
+        <item name="contentInsetStart">16dp</item>
+        <item name="contentInsetStartWithNavigation">@dimen/action_bar_content_inset_with_nav</item>
+        <item name="touchscreenBlocksFocus">true</item>
+        <item name="keyboardNavigationCluster">true</item>
+        <item name="paddingStart">@dimen/action_bar_default_padding_start_material</item>
+        <item name="paddingEnd">@dimen/action_bar_default_padding_end_material</item>
+    </style>
+
+   <!-- increased paddingStart, paddingEnd for round display -->
+   <style name="PreferenceFragment">
+        <item name="layout">@layout/preference_list_fragment</item>
+        <item name="paddingStart">@dimen/select_dialog_padding_start_material</item>
+        <item name="paddingEnd">@dimen/select_dialog_padding_start_material</item>
+        <item name="paddingBottom">48dp</item>
+   </style>
+
+   <!-- paddingStart/End reduced from 12dip to 6dip -->
+   <style name="Widget.ActionButton">
+        <item name="background">?attr/actionBarItemBackground</item>
+        <item name="paddingStart">6dip</item>
+        <item name="paddingEnd">6dip</item>
+        <item name="minWidth">@dimen/action_button_min_width</item>
+        <item name="minHeight">?attr/actionBarSize</item>
+        <item name="gravity">center</item>
+        <item name="maxLines">2</item>
+   </style>
+
+</resources>
