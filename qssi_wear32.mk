@@ -63,6 +63,10 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += service.sf.prime_shader_cache=0
 TARGET_NO_GMS_PACKAGES := true
 #########################End of Go configs########################################
 
+# Set hardware type to watch
+PRODUCT_COPY_FILES += \
+    device/qcom/qssi_wear32/wearable_core_hardware.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/wearable_core_hardware.xml
+
 TARGET_SUPPORTS_WEARABLES := true
 TARGET_SUPPORTS_WEAR_OS := false
 TARGET_SUPPORTS_WEAR_ANDROID := true
