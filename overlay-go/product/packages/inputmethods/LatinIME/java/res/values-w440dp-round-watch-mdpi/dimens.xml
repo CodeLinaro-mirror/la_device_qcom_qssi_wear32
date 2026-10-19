@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/*
+**
+** Copyright (c) Qualcomm Technologies, Inc. and/or its subsidiaries.
+** SPDX-License-Identifier: BSD-3-Clause-Clear
+*/
+-->
+
+<resources>
+    <dimen name="emoji_viewpager_padding_start">24dp</dimen>
+    <dimen name="emoji_pageindicator_margin">84dp</dimen>
+    <dimen name="emoji_actionbar_padding_horizontal">96dp</dimen>
+    <dimen name="emoji_space_padding">8dp</dimen>
+</resources>

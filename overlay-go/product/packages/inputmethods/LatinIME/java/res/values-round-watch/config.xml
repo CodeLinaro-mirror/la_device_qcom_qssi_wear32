@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/*
+**
+** Copyright 2010, The Android Open Source Project
+**
+** Licensed under the Apache License, Version 2.0 (the "License");
+** you may not use this file except in compliance with the License.
+** You may obtain a copy of the License at
+**
+**     http://www.apache.org/licenses/LICENSE-2.0
+**
+** Unless required by applicable law or agreed to in writing, software
+** distributed under the License is distributed on an "AS IS" BASIS,
+** WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+** See the License for the specific language governing permissions and
+** limitations under the License.
+**
+** Changes from Qualcomm Technologies, Inc. are provided under the following license:
+** Copyright (c) Qualcomm Technologies, Inc. and/or its subsidiaries.
+** SPDX-License-Identifier: BSD-3-Clause-Clear
+*/
+-->
+<!-- Base values of this is coming from AOSP file
+packages/inputmethods/LatinIME/java/res/values/config.xml -->
+
+<resources>
+    <!-- was -61.4% -->
+    <fraction name="config_min_keyboard_height">-54%p</fraction>
+
+    <!-- suggestions UI changes for round watch -->
+    <!-- was 36dp -->
+    <dimen name="config_suggestions_strip_horizontal_margin">16dp</dimen>
+    <!-- was 6 -->
+    <integer name="config_max_more_suggestions_row">3</integer>
+    <!-- was 90% -->
+    <fraction name="config_min_more_suggestions_width">70%</fraction>
+
+    <!-- emoji pallette changes for round watch -->
+    <!-- was 14.2857% -->
+    <fraction name="config_emoji_keyboard_key_width">22.2857%p</fraction>
+    <!-- was 33% -->
+    <fraction name="config_emoji_keyboard_row_height">30%p</fraction>
+    <!-- was 21 -->
+    <integer name="config_emoji_keyboard_max_page_key_count">12</integer>
+</resources>
